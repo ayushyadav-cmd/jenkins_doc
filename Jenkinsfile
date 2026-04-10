@@ -7,8 +7,7 @@ pipeline{
 		stages{
 			stage('Checkout'){
 				steps{
-					git branch:'main' , url :
-					'https://github.com/ayushyadav-cmd/jenkins_doc.git
+					git branch:'main' , url:'https://github.com/ayushyadav-cmd/jenkins_doc.git'
 					}
 			}
 		stage('Docker Build'){
