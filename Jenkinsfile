@@ -5,13 +5,13 @@ pipeline{
 		DOCKER_IMAGE = 'hello-world:latest' 
 		}	
 		stages{
-			stage('Checkout"){
+			stage('Checkout'){
 				steps{
 					git branch:'main' , url :
 					'https://github.com/ayushyadav-cmd/jenkins_doc.git
 					}
 			}
-		stage('Docker Build"){
+		stage('Docker Build'){
 			steps {
 				script{
 					if (fileExists('Dockerfile')){
