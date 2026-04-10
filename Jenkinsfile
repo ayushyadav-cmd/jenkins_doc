@@ -2,7 +2,7 @@ pipeline{
 	agent any
 
 	enviroment{
-		DOCKER_IMAGE = 'hello-world:latest" 
+		DOCKER_IMAGE = 'hello-world:latest' 
 		}	
 		stages{
 			stage('Checkout"){
